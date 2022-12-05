@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #f0f0f0;
+}
+.container{
+    width: 100%;
+    border-radius: 5px;
+    height: 80px;
+    margin-left: 240px;
+    margin-top: 70px;
+}
+
+.lbl-menu label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    line-height: 60px;
+    margin-left: 80px;
+    border: solid 1px rgba(4, 51, 78, .6);
+    display: inline-block;
+    padding: 20px;
+    color: black;
+    cursor: pointer;
+    padding-left: 80px;
+    width:200px;
+    height:80px;
+    border:3px solid rgb(44, 42, 42);
+    border-radius:2200px;
+    
+}
+
+.viaje1{
+
+    padding: 0px 0px 0px 0px;
+    word-spacing: 115px;
+}
+.viaje2{
+    padding: -50px 0px 0px 200px;
+    word-spacing: 115px;
+}
+
+.viaje3{
+
+    padding: 10px 10px 10px 10px;
+    word-spacing: 365px;
+}
+
+
+.lbl-menu label:hover{
+    background: #28435d;
+}
+.content{
+    position: relative;
+}
+
+.colores{
+
+    padding: 0px 0px 100px 100px ;
+    letter-spacing: 350px;
+
+}
+.content div{
+    position: absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 30px;
+    background: #fff;
+    padding-bottom: 40px;
+}
+#radio1,#radio2,#radio3,#radio4{
+    display: none;
+}
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3,
+#radio4:checked ~ .tab4
+{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.content div:after{
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    bottom: 100%;
+    left: 28px;
+}
+.content .tab2:after{
+    left: 122px;
+}
+.content .tab3:after{
+    left: 210px;
+}
+.content .tab4:after{
+    left: 303px;
+}
